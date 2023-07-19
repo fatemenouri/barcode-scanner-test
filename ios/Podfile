@@ -34,7 +34,7 @@ target 'NewProject' do
   use_react_native!(
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.
-    :hermes_enabled => true,
+    :hermes_enabled => flags[:hermes_enabled],
     :fabric_enabled => true,
     # Enables Flipper.
     #
